@@ -1,0 +1,31 @@
+caption{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color:#188FA7;
+}
+table{
+    margin: 0 auto;
+    width: 60%;
+    border-collapse: collapse;
+    background-color: #769FB6;
+}
+
+th, td {
+    border:1px solid black ; 
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  th {
+    background-color: #4797AF;
+  }
+  .recreo{
+    background-color: #8AADB2;
+  }
+  div{ text-align: center;
+}
+
+td:hover{
+    background-color: #178AA1;
+}
