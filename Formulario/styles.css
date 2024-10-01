@@ -1,0 +1,10 @@
+.DatosPersonales{
+    background-color: #8e8097;
+}
+legend{
+    background-color: white;
+    border: 1px solid black;
+}
+input{
+    border-radius: 5%;
+}
