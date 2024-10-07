@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario4</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+    <p>
+    <form action="URL-Servidor" method="post">
+        <label for="Matricula">Número de Matricula</label>
+        <input type="text" name="Matricula" id="Matricula" placeholder="Matrícula" pattern="M[0-9]{3}" required>
+        <br>
+        <label for="Matematicas">Matematicas</label>
+        <input type="checkbox" id="matematicas" name="materias" value="Matemáticas">
+        <br>
+        <label for="algoritmia">Algoritmia</label>
+        <input type="checkbox" id="algoritmia" name="materias" value="Algoritmia">
+        <br>
+        <label for="sistemas">Sistemas</label>
+        <input type="checkbox" id="sistemas" name="materias" value="Sistemas">
+        <br>
+        <label for="robotica">Robótica</label>
+        <input type="checkbox" id="robotica" name="materias" value="Robótica">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</p>
+</body>
+
+</html>

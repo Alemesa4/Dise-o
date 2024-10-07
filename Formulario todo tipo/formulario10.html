@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario10</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+
+<body>
+    <form action="URL-PHP" method="POST">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="nombre" required>
+        <br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+        <br>
+        <label for="Teléfono">Teléfono</label>
+        <input type="tel" name="Telefono" id="Telefono" placeholder="Su teléfono">
+        <br>
+        <label for="Ciudad">Ciudad</label>
+        <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
+        <fieldset>
+            <legend>Lenguajes que conoce</legend>
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id="JavaScript" name="Lenguajes" value="Matemáticas">
+            <br>
+            <label for="PHP">PHP</label>
+            <input type="checkbox" id="PHP" name="Lenguajes" value="PHP">
+            <br>
+            <label for="NodeJs">NodeJs</label>
+            <input type="checkbox" id="NodeJs" name="Lenguajes" value="NodeJs">
+            <br>
+            <label for="Python">Python</label>
+            <input type="checkbox" id="Python" name="Lenguajes" value="Robótica">
+            <br>
+            
+        </fieldset>
+        <br>
+        <label>Nivel de Inglés:</label><br>
+            <input type="radio" id="bajo" name="nivel_ingles" value="Bajo">
+            <label for="bajo">Bajo</label><br>
+            <input type="radio" id="medio" name="nivel_ingles" value="Medio">
+            <label for="medio">Medio</label><br>
+            <input type="radio" id="alto" name="nivel_ingles" value="Alto">
+            <label for="alto">Alto</label><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
