@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>Datos personales</h1>
+    <form action="url.php" method="post">
+        <label for="nombre">Nombre </label>
+        <br>
+        <input type="text" id="nombre" name="nombre" pattern="[A-Z][a-z]+" title="Debe comenzar con mayúscula y seguir con minúsculas. Sin caracteres especiales." required>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <br>
+        <input type="text" id="apellido" name="apellido" pattern="[A-Z][a-z]+" title="Debe comenzar con mayúscula y seguir con minúsculas. Sin caracteres especiales." required>
+        <br>
+        <label for="miembro">¿Es miembro del club?</label>
+        <br>
+        <select id="miembro" name="miembro">
+            <option value="si" selected>Sí</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+        <label for="Correo">Email</label>
+        <br>
+        <input type="email" name="Correo" id="Correo" required>
+        <br>
+        <h1>Datos del deporte</h1>
+        <label for="Deporte">Deporte</label>
+        <select id="Deporte" name="Deporte">
+            <option value="Paddle">Paddle</option>
+            <option value="Squash">Squash</option>
+            <option value="Tenis">Tenis</option>
+        </select>
+        <br>
+        <label for="Reserva">Fecha de reserva</label>
+        <br>
+        <input type="date" name="Reserva" id="Reserva">
+        <br>
+        <label for="Hora">Hora de Reserva</label>
+        <br>
+        <input type="time" name="Hora" id="Hora">
+        <br>
+        <input type="checkbox" name="Normas" id="Normas" required >
+        <label for="Normas"> Acepto las normas del club</label>
+        <br>
+        <p style="text-align: center;">
+        <input type="submit" value="Enviar">
+    </p>
+    </form>
+</body>
+</html>

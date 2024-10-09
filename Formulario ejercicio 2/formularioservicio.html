@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioServicio</title>
+</head>
+
+<body>
+    <form action="procesar.php" method="post">
+        <label for="Nombre">Nombre</label>
+        <br>
+        <input type="text" for="Nombre" maxlength="40" required>
+        <br>
+        <label for="Apellidos">Apellidos</label>
+        <br>
+        <input type="text" for="Apellidos" maxlength="60" required>
+        <br>
+        <label for="Correo">Email</label>
+        <br>
+        <input type="email" name="Correo" id="Correo" required>
+        <br>
+        <label for="Contraseña">Contraseña</label>
+        <br>
+        <input type="password" name="Contraseña" id="Contraseña" required>
+        <br>
+        <label for="Sexo">Sexo:</label>
+        <br>
+        <label for="Hombre">Hombre</label>
+        <input type="radio" name="Sexo" id="Sexo" value="Hombre" required>
+        <br>
+        <label for="Mujer">Mujer</label>
+        <input type="radio" name="Sexo" id="Sexo" value="Mujer" required>
+        <br>
+        <label for="Otro">Otro</label>
+        <input type="radio" name="Sexo" id="Sexo" value="Otro" required>
+        <br>
+        <label for="Dispositivos">Dispositivos: </label>
+        <br>
+        <select name="Dispositivos" id="Dispositivos">
+            <option value="Macbook">Macbook</option>
+            <option value="iPhone">iPhone</option>
+            <option value="iPad">iPad</option>
+
+
+        </select>
+        <br>
+        <label for="Conocimos">Como nos conocistes  </label>
+        <br>
+        <select name="Dispositivos" id="Dispositivos">
+            <option value="Buscador">Buscador</option>
+            <option value="Redes sociales">Redes sociales</option>
+            <option value="Amigos">Amigos</option>
+            <option value="Otros">Otros</option>
+        </select>
+        <br>
+        <input type="checkbox" name="Suscribcion" id="Suscribcion" >
+        <label for="Suscribcion"> Deseo subscribirne a la lista de correo</label>
+        <br>
+        <input type="submit" name="Contactar" id="Contactar" value="Contactar">
+    </form>
+</body>
+
+</html>
