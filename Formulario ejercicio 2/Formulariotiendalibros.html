@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TiendaLibros</title>
 </head>
+
 <body>
-    
+    <h2>Crear Cuenta Tienda Libros</h2>
+
+    <form action="Formualrio.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <br>
+        <label for="telefono">Teléfono (xxx xxx xxx):</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+        <br>
+        <label for="Contraseña">Contraseña (mínimo 8 caracteres):</label>
+        <input type="password" id="Contraseña" name="Contraseña" minlength="8" required>
+        <br>
+        <label for="intereses">Áreas de interés:</label>
+        <select id="intereses" name="intereses">
+            <option value="programacion">Programación</option>
+            <option value="diseño">Diseño</option>
+            <option value="ciencias">Ciencias</option>
+        </select>
+        <br>
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        <br>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos de protección de datos</label>
+
+        <br><br>
+
+        <input type="submit" value="Crear Cuenta">
+    </form>
 </body>
+
 </html>

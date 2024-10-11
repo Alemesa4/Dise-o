@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <h2>Checkout</h2>
+    <form action="procesar.php" method="POST">
+       <label for="numero_tarjeta">Número de tarjeta (16 dígitos):</label>
+        <input type="text" id="numero_tarjeta" name="numero_tarjeta" maxlength="16" pattern="\d{16}" required>
+        <br><br>
+
+        <label for="nombre_titular">Nombre del titular:</label>
+        <input type="text" id="nombre_titular" name="nombre_titular" required>
+        <br><br>
+
+        <label for="mes_caducidad">Mes de caducidad:</label>
+        <select id="mes_caducidad" name="mes_caducidad" required>
+            <option value="">Mes</option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <br><br>
+
+        <label for="año_caducidad">Año de caducidad:</label>
+        <select id="año_caducidad" name="año_caducidad" required>
+            <option value="">Año</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+        </select>
+        <br><br>
+
+        <label for="cvv">Código de seguridad (CVV):</label>
+        <input type="password" id="cvv" name="cvv" maxlength="3" pattern="\d{3}" required>
+        <br><br>
+
+        <label for="notas">Notas (opcional):</label>
+        <textarea id="notas" name="notas" cols="60" rows="2"></textarea>
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="guardar_datos" name="guardar_datos">
+            Guardar datos para otras compras
+        </label>
+        <br><br>
+
+        <button type="submit">Pagar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</body>
+</html>
