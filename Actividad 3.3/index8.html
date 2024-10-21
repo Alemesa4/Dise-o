@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de estilos de tablas en CSS</title>
+    <style>
+        /* caption-side: Posición del título respecto a la tabla */
+        table {
+            caption-side: top;
+            width: 100%;
+        }
+
+        /* table-layout: Formato de las celdas, filas y columnas */
+        .table-layout {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        /* border-collapse: Selección del modelo de los bordes */
+        .border-collapse {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        /* border-spacing: Espaciado entre los bordes de celdas adyacentes */
+        .border-spacing {
+            border-collapse: separate;
+            border-spacing: 10px; /* Espacio entre las celdas */
+            width: 100%;
+        }
+
+        /* empty-cells: Visibilidad de los bordes de celdas sin contenido */
+        .empty-cells {
+            border-collapse: collapse;
+            empty-cells: show; /* Muestra los bordes de las celdas vacías */
+        }
+
+        /* Estilos generales para la tabla */
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ejemplos de estilos de tablas en CSS</h2>
+
+    <table>
+        <caption>Esta es la posición del título en la parte superior (caption-side: top)</caption>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Datos 1</td>
+            <td>Datos 2</td>
+        </tr>
+    </table>
+
+    <table class="table-layout">
+        <caption>Tabla con layout fijo (table-layout: fixed)</caption>
+        <tr>
+            <th style="width: 50%;">Encabezado 1</th>
+            <th style="width: 50%;">Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Datos 1</td>
+            <td>Datos 2</td>
+        </tr>
+    </table>
+
+    <table class="border-collapse">
+        <caption>Tabla con bordes colapsados (border-collapse: collapse)</caption>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Datos 1</td>
+            <td>Datos 2</td>
+        </tr>
+    </table>
+
+    <table class="border-spacing">
+        <caption>Tabla con espaciado de bordes (border-spacing: 10px)</caption>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Datos 1</td>
+            <td></td> <!-- Celda vacía para mostrar el borde -->
+        </tr>
+    </table>
+
+    <table class="empty-cells">
+        <caption>Tabla mostrando bordes de celdas vacías (empty-cells: show)</caption>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Datos 1</td>
+            <td></td> <!-- Celda vacía para mostrar el borde -->
+        </tr>
+    </table>
+
+</body>
+</html>

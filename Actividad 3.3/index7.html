@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de estilos de listas en CSS</title>
+    <style>
+        /* list-style-type: Define el tipo de marcador de lista */
+        .list-style-type {
+            list-style-type: square;
+        }
+
+        /* list-style-image: Aplica una imagen como marcador de lista */
+        .list-style-image {
+            list-style-image: url('Estrella.pgn');
+        }
+
+        /* list-style-position: Define la posición del marcador */
+        .list-style-position {
+            list-style-position: inside;
+        }
+
+        /* list-style: Combina tipo, posición e imagen */
+        .list-style-combined {
+            list-style: circle inside url('Estrella.png');
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ejemplos de estilos de listas en CSS</h2>
+
+    <ul class="list-style-type">
+        <li>Este elemento tiene un marcador de tipo cuadrado (list-style-type: square).</li>
+        <li>Otro elemento de ejemplo.</li>
+    </ul>
+
+    <ul class="list-style-image">
+        <li>Este elemento usa una imagen como marcador (list-style-image: url()).</li>
+        <li>Otro elemento de ejemplo.</li>
+    </ul>
+
+    <ul class="list-style-position">
+        <li>Este elemento tiene el marcador dentro del contenido (list-style-position: inside).</li>
+        <li>Otro elemento de ejemplo.</li>
+    </ul>
+
+    <ul class="list-style-combined">
+        <li>Este elemento combina marcador circular, posición inside y una imagen (list-style).</li>
+        <li>Otro elemento de ejemplo.</li>
+    </ul>
+
+</body>
+</html>
