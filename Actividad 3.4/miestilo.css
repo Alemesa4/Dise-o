@@ -1,0 +1,13 @@
+tr:nth-child(odd) {color:red;}/* o tr:nth-child(2n+1) */
+/*Selecciona las filas impares de una tabla.*/
+tr:nth-child(even) {color:darkblue;}/*o tr:nth-child(2n) */
+/*Selecciona las filas pares de una tabla.*/
+
+p:nth-child(7) {color:brown;}
+/*Podemos ver que no se aplica ya que se ha aplicado ocmo ultimo */
+/*Selecciona el segundo elemento*/
+p:nth-child(6n) {color:orange;}
+/*Selecciona los elementos 6, 12, 18, etc.*/
+p:nth-child(3n+4) {color:blue;}
+/*Selecciona los elementos 4, 7, 10, 13, etc.*/
+
