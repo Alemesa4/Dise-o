@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+
+        .div2 {
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+        }
+
+        .div3 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        .div4 {
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Cajas box-sizing</h3>
+    <div class="div1">
+        <p>Esta caja es mas pequeña</p>
+        <p>(ancho 300px y altura 100px)</p>
+    </div>
+    <br>
+    <div class="div2"><p>Esta caja es mas grande</p>
+    <p>(ancho 300px y alto 100px y 50px de a izquierda,derecha, arriba y abajo, en total 400px x 200px)</p></div>
+    <h3>Cajas box-sizing</h3>
+    <div class="div3"><p>Las dos cajas</p>
+    <p>(ancho 300px y alto 100px)</p></div>
+    <br>
+    <div class="div4"><p>Tengo 50px de relleno y el mismo tamaño, fantástico!!</p></div>
+</body>
+
+</html>
