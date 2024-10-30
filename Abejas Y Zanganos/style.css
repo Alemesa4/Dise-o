@@ -1,0 +1,20 @@
+.Cabecera{
+    display: grid;
+    background-color: #FFB627;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+.Logo{
+width: 50px;
+height: 50px;
+}
+
+#Search{
+    height: 30px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
