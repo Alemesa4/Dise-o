@@ -73,14 +73,12 @@ nav ul {
     align-items: center;
 }
 
-
 .Redes {
     width: 40px; 
     height: 40px; 
     object-fit: contain; 
     border-radius: 50%; 
 }
-
 
 .Redes:hover {
     opacity: 0.8; 
@@ -146,9 +144,7 @@ nav ul {
 }
 
 .principal {
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    grid-template-rows: auto auto; 
+    display: flex;
     gap: 20px;
     background-color: white;
     border-radius: 50px;
@@ -159,6 +155,7 @@ nav ul {
     grid-column: 1; 
     grid-row: 1;
     padding: 20px;
+    font-size: 18px;
     font-size: 30px;
 }
 
@@ -196,7 +193,114 @@ nav ul {
     aspect-ratio: 16 / 9;
     border-radius: 20px;
 }
-
 .textop{
-    font-size: 23px;
+    font-size: 20px;
+}
+.principal img{
+    border-radius: 15px;
+    width: 80%;
+    height: 90%;
+}
+
+.producto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.producto-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    width: 80%;
+    max-width: 700px;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    max-width: 300px;
+}
+
+.producto-detalles {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.producto-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.producto-descripcion {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.producto-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cantidad-boton {
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #FF9505;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cantidad-boton:hover {
+    background-color: #FF6F00;
+}
+
+#cantidad {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.producto-estrellas {
+    font-size: 20px;
+    color: #FFB627;
+    margin-bottom: 20px;
+}
+
+.producto-estrellas .estrella {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.producto-boton {
+    display: flex;
+    justify-content: center;
+}
+
+.agregar-carrito {
+    padding: 10px 20px;
+    background-color: #FF9505;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.agregar-carrito:hover {
+    background-color: #FF6F00;
 }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abejas Y Zanganos</title>
+    <link rel="stylesheet" href="stylemiel.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="Cabecera">
+      <img class="Logo" alt="Imagen abeja" src="IMG/Abeja.png" />
+      <h1>Abejas Y Zanganos</h1>
+      <input type="text" name="Search" id="Search" placeholder="🔍Buscar..." />
+      <div class="Barra">
+        <nav>
+          <ul>
+            <li><a href="" class="BarraInicio">MENU</a></li>
+            <li><a href="Index.html" class="BarraInicio">HOME</a></li>
+            <li><a href="Mieles.html" class="BarraInicio">MIELES</a></li>
+            <li><a href="" class="BarraInicio">HIDROMIELES</a></li>
+            <li><a href="" class="BarraInicio">CREMAS</a></li>
+            <li><a href="" class="BarraInicio">OTROS</a></li>
+            <li><a href="Sobrenosotros.html" class="BarraInicio">Sobre nosotros</a></li>
+            <li>
+              <a href="" class="BarraInicio"
+                ><img class="Redes" src="IMG/Linkedin.png" alt="Linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="BarraInicio"
+                ><img class="Redes" src="IMG/Instagram.png" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="BarraInicio"
+                ><img class="Redes" src="IMG/X-LOGO.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="" class="BarraInicio"
+                ><img class="Redes" src="IMG/Facebook.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="" class="BarraInicio">🛒</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="cuerpo">
+      <div class="columna1">
+        <ul class="Listaiz">
+            <li onclick="window.location.href='Iniciosesion.html'">INICIO SESION</li>
+            <li onclick="window.location.href='Registro.html'">REGISTRO</li>
+            <li>OPCIÓN 1</li>
+            <li>OPCIÓN 2</li>
+            <li>OPCIÓN 3</li>
+            <li>OPCIÓN 4</li>
+        </ul>
+      </div>
+      <div class="principal">
+        <div class="producto-container">
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="IMG/Miel.jpg" alt="Producto" />
+                </div>
+    
+                <div class="producto-detalles">
+                    <h2 class="producto-titulo">Miel de Abeja Pura</h2>
+                    <p class="producto-descripcion">
+                        Miel 100% pura, obtenida de colmenas locales, ideal para endulzar tus bebidas o utilizar en postres.
+                    </p>
+    
+                    <div class="producto-cantidad">
+                        <button class="cantidad-boton" onclick="decrementarCantidad()">-</button>
+                        <span id="cantidad">1</span>
+                        <button class="cantidad-boton" onclick="incrementarCantidad()">+</button>
+                    </div>
+    
+                    <div class="producto-estrellas">
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                    </div>
+    
+                    <div class="producto-boton">
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="IMG/Miel.jpg" alt="Producto" />
+                </div>
+    
+                <div class="producto-detalles">
+                    <h2 class="producto-titulo">Miel de Abeja Pura</h2>
+                    <p class="producto-descripcion">
+                        Miel 100% pura, obtenida de colmenas locales, ideal para endulzar tus bebidas o utilizar en postres.
+                    </p>
+    
+                    <div class="producto-cantidad">
+                        <button class="cantidad-boton" onclick="decrementarCantidad()">-</button>
+                        <span id="cantidad">1</span>
+                        <button class="cantidad-boton" onclick="incrementarCantidad()">+</button>
+                    </div>
+    
+                    <div class="producto-estrellas">
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                    </div>
+    
+                    <div class="producto-boton">
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="IMG/Miel.jpg" alt="Producto" />
+                </div>
+    
+                <div class="producto-detalles">
+                    <h2 class="producto-titulo">Miel de Abeja Pura</h2>
+                    <p class="producto-descripcion">
+                        Miel 100% pura, obtenida de colmenas locales, ideal para endulzar tus bebidas o utilizar en postres.
+                    </p>
+    
+                    <div class="producto-cantidad">
+                        <button class="cantidad-boton" onclick="decrementarCantidad()">-</button>
+                        <span id="cantidad">1</span>
+                        <button class="cantidad-boton" onclick="incrementarCantidad()">+</button>
+                    </div>
+    
+                    <div class="producto-estrellas">
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                        <span class="estrella">&#9733;</span>
+                    </div>
+    
+                    <div class="producto-boton">
+                        <button class="agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+
+       </div>
+        
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
